@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', function(){
    //Create the addTask Function
   addTask = () =>  {
      let taskText = taskInput.value.trim();
-     if( taskInput === " "){
-        alert('Please Input Your Task')
-     } else {
-
+     if (taskText === '') {
+        alert('Please enter a task.');
+       } 
+    else{
         //Task Creation and Removal
         let list = document.createElement('li')
         list.textContent = taskText;
         let removeBtn = document.createElement('button')
         removeBtn.textContent = "Remove";
-        removeBtn.className = 'remove-btn';
+        removeBtn.classList.add('remove-btn');
 
         // Assign an onclick event to the remove button
         removeBtn.onclick = function() {
