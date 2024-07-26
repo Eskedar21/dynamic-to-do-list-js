@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
-    // Initialize and Load Tasks from Local Storage
-    function initializeTasks() {
+    // Load Tasks from Local Storage
+    function loadTasks() {
         const storedTasks = localStorage.getItem('tasks');
         if (storedTasks) {
             const tasks = JSON.parse(storedTasks);
@@ -60,5 +60,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize tasks on page load
-    initializeTasks();
+    loadTasks();
 });
