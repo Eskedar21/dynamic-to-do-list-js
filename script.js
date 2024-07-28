@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initialize tasks on page load
+   
     loadTasks();
 });
